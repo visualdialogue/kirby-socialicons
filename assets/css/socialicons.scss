@@ -1,0 +1,54 @@
+// social media
+.footer-social-media {
+   flex: 0 0 span(2 of 5);
+   margin-left: gutter(of 5);
+}
+.footer-social-media-list {
+   display: flex;
+   // justify-content: space-between;
+}
+.footer-social-media-title {
+   font-weight: 700;
+   text-transform: uppercase;
+   @include break(sm) {
+       margin-bottom: #{gutter(of 2) / 4};
+   }
+}
+.footer-social-media-item {
+   a:hover {
+       fill: $hover;
+   }
+   @include break(sm) {
+       margin-right: #{gutter(of 2) / 2};
+   }
+}
+.footer-social-media-icon {
+   fill: white;
+   $size: 2vw;
+   width: $size;
+   height: $size;
+}
+
+// mailchimp form
+.footer-newsletter-wrapper {
+   flex: 0 0 span(3 of 5);
+}
+.footer-newsletter-title {
+   font-weight: 700;
+   text-transform: uppercase;
+   @include break(sm) {
+       margin-bottom: #{gutter(of 3) / 4};
+   }
+}
+.footer-newsletter-subscribe {
+   position: absolute;  
+   top: 0;
+   right: 0;
+   margin: 0;      
+   padding: 0;
+   border: 0;
+}
+
+.footer-credits {
+   @extend %xs-sans-text;
+}
