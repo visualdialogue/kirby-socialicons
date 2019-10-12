@@ -1,30 +1,42 @@
 // social media
 .footer-social-media {
-   flex: 0 0 span(2 of 5);
-   margin-left: gutter(of 5);
+    flex: 0 0 span(2 of 5);
+    margin-left: gutter(of 5);
 }
+
 .footer-social-media-list {
-   display: flex;
-   // justify-content: space-between;
+    display: flex;
 }
+
 .footer-social-media-title {
-   font-weight: 700;
-   text-transform: uppercase;
-   @include break(sm) {
-       margin-bottom: #{gutter(of 2) / 4};
-   }
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: #{gutter() / 2};
+
+    @include break(sm) {
+        margin-bottom: #{gutter(of 2) / 4};
+    }
 }
+
 .footer-social-media-item {
-   a:hover {
-       fill: $hover;
-   }
-   @include break(sm) {
-       margin-right: #{gutter(of 2) / 2};
-   }
+    a:hover {
+        fill: $hover;
+    }
+
+    margin-right: #{gutter()};
+    @include break(sm) {
+        margin-right: #{gutter(of 2) / 2};
+    }
 }
+
 .footer-social-media-icon {
-   fill: white;
-   $size: 2vw;
-   width: $size;
-   height: $size;
+    fill: white;
+    $size: 10vw;
+    width: $size;
+    height: $size;
+    @include break(sm) {
+        $size: 2vw;
+        width: $size;
+        height: $size;
+    }
 }
