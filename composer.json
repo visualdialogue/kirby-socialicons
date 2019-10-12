@@ -1,6 +1,6 @@
 {
     "name": "visualdialogue/kirby-socialicons",
-    "description": "Mailchimp footer field",
+    "description": "Adds social media svg icons",
     "type": "kirby-plugin",
     "license": "MIT",
     "authors": [
