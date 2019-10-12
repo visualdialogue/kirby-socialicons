@@ -1,7 +1,9 @@
 // social media
 .footer-social-media {
-    flex: 0 0 span(2 of 5);
-    margin-left: gutter(of 5);
+    @include break(sm) {
+        flex: 0 0 span(2 of 5);
+        margin-left: gutter(of 5);   
+    }    
 }
 
 .footer-social-media-list {
@@ -12,7 +14,6 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: #{gutter() / 2};
-
     @include break(sm) {
         margin-bottom: #{gutter(of 2) / 4};
     }
@@ -22,7 +23,6 @@
     a:hover {
         fill: $hover;
     }
-
     margin-right: #{gutter()};
     @include break(sm) {
         margin-right: #{gutter(of 2) / 2};
