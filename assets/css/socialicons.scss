@@ -6,32 +6,43 @@
     }    
 }
 
-.footer-social-media-list {
-    display: flex;
-}
-
 .footer-social-media-title {
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: #{gutter() / 2};
+    color: white;
+}
+
+.footer-social-media-list {
+    display: flex;
+    // negative margin so icons can have equal padding on all sides
+    margin-left: -#{gutter() / 2};
     @include break(sm) {
-        margin-bottom: #{gutter(of 2) / 4};
+        margin-left: -#{gutter(of 2) / 4};
     }
 }
 
 .footer-social-media-item {
-    a:hover {
+    flex: 0 0 #{gutter() * 3};
+    @include break(sm) {
+        flex: 0 0 #{gutter(of 2)};
+    }
+}
+
+.footer-social-media-link {
+    display: block;
+    &:hover {
         fill: $hover;
     }
-    margin-right: #{gutter()};
+    padding: #{gutter() / 2};
     @include break(sm) {
-        margin-right: #{gutter(of 2) / 2};
+        padding: #{gutter(of 2) / 4};
     }
 }
 
 .footer-social-media-icon {
+    display: block; // remove whitespace below, from https://stackoverflow.com/questions/24626908/how-to-get-rid-of-extra-space-below-svg-in-div-element
     fill: white;
-    $size: 10vw;
+    $size: 8vw;
     width: $size;
     height: $size;
     @include break(sm) {

@@ -1,12 +1,13 @@
 .footer-social-media
     .footer-social-media-title Follow
-    ul.footer-social-media-list
-        li.footer-social-media-item
-            a(href="<?= option('visualdialogue.socialicons.facebook') ?>")
-                svg.footer-social-media-icon(viewBox="0 0 44 44"): use(xlink:href="#facebook")
-        li.footer-social-media-item
-            a(href="<?= option('visualdialogue.socialicons.instagram') ?>")
-                svg.footer-social-media-icon(viewBox="0 0 44 44"): use(xlink:href="#instagram")
-        li.footer-social-media-item
-            a(href="<?= option('visualdialogue.socialicons.twitter') ?>")
-                svg.footer-social-media-icon(viewBox="0 0 44 44"): use(xlink:href="#twitter")
+    .footer-social-media-list
+        // no li b/c a tag needs to be wrapper so can use susy grid measurements of parent for padding to match negative margins
+        //- li.footer-social-media-item
+        a.footer-social-media-link(href="<?= option('visualdialogue.socialicons.facebook') ?>" target="_blank")
+            svg.footer-social-media-icon(viewBox="0 0 44 44"): use(xlink:href="#facebook")
+        //- li.footer-social-media-item
+        a.footer-social-media-link(href="<?= option('visualdialogue.socialicons.instagram') ?>" target="_blank")
+            svg.footer-social-media-icon(viewBox="0 0 44 44"): use(xlink:href="#instagram")
+        //- li.footer-social-media-item
+        a.footer-social-media-link(href="<?= option('visualdialogue.socialicons.twitter') ?>" target="_blank")
+            svg.footer-social-media-icon(viewBox="0 0 44 44"): use(xlink:href="#twitter")
