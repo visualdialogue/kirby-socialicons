@@ -31,7 +31,9 @@
 .footer-social-media-link {
     display: block;
     &:hover {
-        fill: $hover;
+        svg {
+            fill: $hover;
+        }
     }
     padding: #{gutter() / 2};
     @include break(sm) {
